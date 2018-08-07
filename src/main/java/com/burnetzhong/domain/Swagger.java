@@ -4,14 +4,14 @@ import com.burnetzhong.domain.auth.SecuritySchemeDefinition;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.io.Serializable;
 import java.util.*;
 
-@Document(collection = "Swagger")
-public class Swagger {
+//import org.springframework.data.mongodb.core.mapping.Document;
+
+//@Document(collection = "Swagger")
+public class Swagger implements Serializable {
     private String id;
 
     protected String swagger = "2.0";

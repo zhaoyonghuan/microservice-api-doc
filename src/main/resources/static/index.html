@@ -43,16 +43,16 @@
 
     <div class="row">
         <h1>
-            API base path list:
+            Project path list:
         </h1>
     </div>
     <div class="row">
         <div id="api-list">
             <ul class="list-group">
                 <li v-for="api in apis" class="list-group-item">
-                    <a v-bind:href="'swagger/index.html?url=/api' + api.basePath" >
-                        Title:
-                        {{ api.basePath }}
+                    <a v-bind:href="'swagger/index.html?url=/api/' + api.info.title" >
+                        Description:
+                        {{ api.info.title}}
                     </a>
                 </li>
 
